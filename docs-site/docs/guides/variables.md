@@ -121,8 +121,8 @@ void Start() {
     .code_start
         .export _greet
         _greet:
-            // playerName と playerLevel を使った処理
-            JUMP, 0xFFFFFFFF
+            # playerName と playerLevel を使った処理
+            JUMP, 0xFFFFFFFC
     .code_end
     ";
 
@@ -150,8 +150,8 @@ void Start() {
     .code_start
         .export _calculate
         _calculate:
-            // 計算処理（result に結果を格納）
-            JUMP, 0xFFFFFFFF
+            # 計算処理（result に結果を格納）
+            JUMP, 0xFFFFFFFC
     .code_end
     ";
 

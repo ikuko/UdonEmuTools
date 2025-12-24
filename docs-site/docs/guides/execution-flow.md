@@ -92,8 +92,8 @@ VM はテキストを直接実行できません。内部形式（命令配列�
     .export _start
     _start:
         PUSH, __const_SystemString_0
-        EXTERN, ""UnityEngineDebug.__Log__SystemObject__SystemVoid""
-        JUMP, 0xFFFFFFFF
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        JUMP, 0xFFFFFFFC
 .code_end
 ```
 

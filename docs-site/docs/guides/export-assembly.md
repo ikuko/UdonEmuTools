@@ -58,14 +58,14 @@ Tools > HoshinoLabs > UdonEmu > Copy Assembly To Clipboard With Heap
 
 ```assembly
 .data_start
-    __const_SystemString_0: %SystemString, ""Hello, UdonEmu!""
+    __const_SystemString_0: %SystemString, "Hello, UdonEmu!"
 .data_end
 .code_start
     .export PrintGreeting
     PrintGreeting:
         PUSH, __const_SystemString_0
-        EXTERN, ""UnityEngineDebug.__Log__SystemObject__SystemVoid""
-        JUMP, 0xFFFFFFFF
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        JUMP, 0xFFFFFFFC
 .code_end
 ```
 
