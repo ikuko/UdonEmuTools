@@ -2,8 +2,16 @@ using VRC.SDK3.Data;
 
 namespace HoshinoLabs.UdonEmuTools.Udon {
 	public static class TextSerializer {
+		public static string Serialize(global::System.Boolean v) {
+			return v.ToString();
+		}
+
 		public static string Serialize(global::System.Byte v) {
 			return $"0x{v:X8}";
+		}
+
+		public static string Serialize(global::System.Char v) {
+			return v.ToString();
 		}
 
 		public static string Serialize(global::System.DateTime v) {
@@ -44,6 +52,10 @@ namespace HoshinoLabs.UdonEmuTools.Udon {
 
 		public static string Serialize(global::System.Single v) {
 			return v.ToString();
+		}
+
+		public static string Serialize(global::System.String v) {
+			return v;
 		}
 
 		public static string Serialize(global::System.Text.RegularExpressions.RegexOptions v) {
@@ -332,8 +344,14 @@ namespace HoshinoLabs.UdonEmuTools.Udon {
 
 		public static string Serialize(object v) {
 			switch (v.GetType().FullName) {
+				case "System.Boolean": {
+						return Serialize((global::System.Boolean)v);
+					}
 				case "System.Byte": {
 						return Serialize((global::System.Byte)v);
+					}
+				case "System.Char": {
+						return Serialize((global::System.Char)v);
 					}
 				case "System.DateTime": {
 						return Serialize((global::System.DateTime)v);
@@ -364,6 +382,9 @@ namespace HoshinoLabs.UdonEmuTools.Udon {
 					}
 				case "System.Single": {
 						return Serialize((global::System.Single)v);
+					}
+				case "System.String": {
+						return Serialize((global::System.String)v);
 					}
 				case "System.Text.RegularExpressions.RegexOptions": {
 						return Serialize((global::System.Text.RegularExpressions.RegexOptions)v);
@@ -482,13 +503,8 @@ namespace HoshinoLabs.UdonEmuTools.Udon {
 				case "VRC.SDKBase.VRCInputMethod": {
 						return Serialize((global::VRC.SDKBase.VRCInputMethod)v);
 					}
-				case "System.String": {
-						return (global::System.String)v;
-					}
-				default: {
-						return null;
-					}
 			}
+			return null;
 		}
 	}
 }
