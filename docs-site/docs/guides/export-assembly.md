@@ -12,7 +12,7 @@ title: UdonAssembly のエクスポート
 
 ## 前提条件
 
-- Unity プロジェクトに UdonEmu がインストールされていること（[インストール](/install) 参照）
+- Unity プロジェクトに **UdonEmu Tools** がインストールされていること（[UdonEmu Tools のインストール](/guides/installation-tools) 参照）
 - UdonSharp でプログラムを作成済みであること
 
 ---

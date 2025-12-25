@@ -11,6 +11,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'guides/execution-flow',
         'guides/variables',
+        'guides/installation-tools',
         'guides/export-assembly',
         'guides/events',
         'guides/serializable-types',
