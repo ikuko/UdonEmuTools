@@ -21,7 +21,7 @@ using UnityEngine;
 [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
 public class ExampleUdonEmu : UdonSharpBehaviour {
     [SerializeField]
-    UdonVM vm;
+    UdonEmu vm;
 
     [SerializeField, HideInInspector]
     UdonTypeResolver typeResolver;
@@ -92,12 +92,12 @@ public class ExampleUdonEmu : UdonSharpBehaviour {
 
 1. Unity で新規シーンを作成
 2. 空の GameObject を作成（名前は任意、例: `UdonEmuTest`）
-3. **`UdonVM` コンポーネントを GameObject にアタッチ**
+3. **`UdonEmu` コンポーネントを GameObject にアタッチ**
 4. **`ExampleUdonEmu` コンポーネントを同じ GameObject にアタッチ**
 
 ### 2. Inspector で vm を設定
 
-Inspector の `ExampleUdonEmu` コンポーネントで、`vm` フィールドに **同じ GameObject の `UdonVM`** をドラッグ＆ドロップで設定してください。
+Inspector の `ExampleUdonEmu` コンポーネントで、`vm` フィールドに **同じ GameObject の `UdonEmu`** をドラッグ＆ドロップで設定してください。
 
 ### 3. Play して確認
 

@@ -10,9 +10,9 @@ UdonEmu の主要な API について説明します。
 
 利用者が直接触る頻度が高い API は以下です。
 
-### UdonVM
+### UdonEmu
 
-UdonAssembly を実行する仮想マシンの中核クラスです。
+UdonAssembly を実行する中核クラスです。
 
 #### 主要メソッド
 

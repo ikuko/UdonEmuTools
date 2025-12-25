@@ -58,7 +58,7 @@ BOOTH から `UdonEmu-<version>.unitypackage` をダウンロードしてくだ�
 ```csharp
 using HoshinoLabs.UdonEmu.Udon;
 
-// UdonVM などが参照できれば導入成功
+// UdonEmu などが参照できれば導入成功
 ```
 
 導入できたら [クイックスタート](/quickstart) に進んでください。

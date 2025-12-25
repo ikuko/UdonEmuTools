@@ -64,12 +64,12 @@ ExampleUdonEmu.ExecuteUdonAssembly (vm.AssignProgramAndVariables)
 - `vm` フィールドが設定されていない
 
 **対処**：
-1. Inspector で `vm` フィールドに `UdonVM` を設定したか確認
-2. `UdonVM` コンポーネントが同じ GameObject にアタッチされているか確認
+1. Inspector で `vm` フィールドに `UdonEmu` を設定したか確認
+2. `UdonEmu` コンポーネントが同じ GameObject にアタッチされているか確認
 3. SerializeField 属性が付いているか確認
    ```csharp
    [SerializeField]
-   UdonVM vm;
+   UdonEmu vm;
    ```
 
 **参考**：
@@ -349,7 +349,7 @@ InvalidCastException: Cannot cast from source type to destination type.
 
 ### コンポーネントの設定
 
-- [ ] **`UdonVM` コンポーネント**が GameObject にアタッチされている
+- [ ] **`UdonEmu` コンポーネント**が GameObject にアタッチされている
 - [ ] **スクリプトコンポーネント**が同じ GameObject にアタッチされている
 - [ ] Inspector で **`vm` フィールド**が設定されている
 - [ ] `typeResolver` と `programDescriptor` に **`[SerializeField]` 属性**が付いている
