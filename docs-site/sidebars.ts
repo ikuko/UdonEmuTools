@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
         'guides/execution-flow',
         'guides/variables',
         'guides/export-assembly',
+        'guides/events',
         'guides/compatibility',
       ],
     },
