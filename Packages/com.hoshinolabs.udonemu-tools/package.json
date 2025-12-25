@@ -16,6 +16,6 @@
   "dependencies": {
   },
   "vpmDependencies": {
-    "com.vrchat.worlds": ">=3.8.2"
+    "com.vrchat.worlds": ">=3.10.1"
   }
 }
