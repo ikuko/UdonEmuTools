@@ -13,6 +13,7 @@ const sidebars: SidebarsConfig = {
         'guides/variables',
         'guides/export-assembly',
         'guides/events',
+        'guides/serializable-types',
         'guides/compatibility',
       ],
     },

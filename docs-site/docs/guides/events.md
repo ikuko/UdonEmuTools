@@ -2,7 +2,7 @@
 title: 対応イベント
 ---
 
-# 対応イベント（Unity Events / Udon Events）
+# 対応イベント
 
 このページでは、UdonEmu が対応しているイベントを一覧化しています。
 
