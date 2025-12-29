@@ -9,6 +9,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'ガイド',
       items: [
+        'guides/architecture',
         'guides/execution-flow',
         'guides/variables',
         'guides/installation-tools',
